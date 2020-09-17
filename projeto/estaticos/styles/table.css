@@ -1,0 +1,14 @@
+table {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+table td {
+    height: 62px;
+}
+
+.table_cores {
+    background: #1C1C1C;
+}

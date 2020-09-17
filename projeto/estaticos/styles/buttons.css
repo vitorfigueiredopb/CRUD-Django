@@ -1,0 +1,165 @@
+/*Estilo dos botões da página list_consoles*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border: none;
+    color: white;
+}
+
+a.add_button {
+    text-align: center;
+    padding: 1px;
+    color: white;
+    background: #006400;
+    border-radius: 6px;
+    width: 80px;
+    height: 28px;
+    display: block;
+    transition: 0.2s;
+}
+
+a.add_button:hover {
+    text-decoration: none;
+    background: #008000;
+}
+
+a.update_button {
+    text-align: center;
+    padding: 1px;
+    color: white;
+    background: #191970;
+    border-radius: 6px;
+    width: 80px;
+    height: 28px;
+    display: block;
+    transition: 0.2s;
+}
+
+a.update_button:hover {
+    text-decoration: none;
+    background: #000080;
+}
+
+a.delete_button {
+    text-align: center;
+    padding: 1px;
+    color: white;
+    background: #800000;
+    border-radius: 6px;
+    width: 80px;
+    height: 28px;
+    display: block;
+    transition: 0.2s;
+}
+
+a.delete_button:hover {
+    text-decoration: none;
+    background: #B22222;
+}
+
+
+/*Estilos do botões da página confirm_delete*/
+button.yes_button {
+    background: #006400;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-size: 23px;
+    transition: 0.2s;
+}
+
+button.yes_button:hover {
+    cursor: pointer;
+    background: #008000;
+}
+
+button.cancel_button {
+    background: #800000;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 23px;
+    width: 110px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+button.cancel_button:hover {
+    background: #B22222;
+}
+
+button.cancel_button a {
+    border: none;
+    color: white;
+    padding: 0.5em;     
+    margin: -0.5em; 
+}
+button.cancel_button a:hover {
+    text-decoration: none;
+}
+
+/*Estilo dos botões da página update_console*/
+button.update_button {
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    background: #006400;
+    border-radius: 6px;
+    width: 110px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+button.update_button:hover {
+    cursor: pointer;
+    background: #008000;
+}
+
+/*botões da página create_console*/
+button.criar {
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    background: #006400;
+    border-radius: 6px;
+    width: 95px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+button.criar:hover {
+    cursor: pointer;
+    background: #008000;
+}
+
+button.cancelar {
+    text-align: center;
+    font-size: 23px;
+    background: #800000;
+    border-radius: 6px;
+    width: 110px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+button.cancelar a {
+    border: none;
+    color: white;
+    padding: 0.5em;     
+    margin: -0.5em; 
+}
+
+button.cancelar a:hover {
+    text-decoration: none;
+}
+
+button.cancelar:hover {
+    text-decoration-line: none;
+    background: #B22222;
+}

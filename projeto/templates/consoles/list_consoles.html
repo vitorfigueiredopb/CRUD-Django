@@ -1,100 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/table.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/buttons.css' %}">
+    
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
     <title>Consoles</title>
-
-    <style>
-        body {
-            background: #DCDCDC;
-            font-family: 'Ubuntu', sans-serif;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 32px;
-            margin-bottom: 32px;
-        }
-
-        .container {
-            text-align: center;
-            color: black;
-        }
-
-        table {
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 6px;
-        }
-
-        .table_cores {
-            background: #1C1C1C;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        a.adicionar {
-            text-align: center;
-            padding: 1px;
-            color: white;
-            background: #006400;
-            border-radius: 6px;
-            width: 80px;
-            height: 28px;
-            display: block;
-            transition: 0.2s;
-        }
-
-        a.adicionar:hover {
-            text-decoration: none;
-            background: #008000;
-        }
-
-        a.update {
-            text-align: center;
-            padding: 1px;
-            color: white;
-            background: #191970;
-            border-radius: 6px;
-            width: 80px;
-            height: 28px;
-            display: block;
-            transition: 0.2s;
-        }
-
-        a.update:hover {
-            text-decoration: none;
-            background: #000080;
-        }
-
-        a.delete {
-            text-align: center;
-            padding: 1px;
-            color: white;
-            background: #800000;
-            border-radius: 6px;
-            width: 80px;
-            height: 28px;
-            display: block;
-            transition: 0.2s;
-        }
-
-        a.delete:hover {
-            text-decoration: none;
-            background: #B22222;
-        }
-    </style>
 
 </head>
 <body>
@@ -109,7 +25,7 @@
             <td>Fabricante</td>
             <td>Ano de Lançamento</td>
             <td>Descrição</td>
-            <td><a class="adicionar" href="{% url 'create_console' %}">Adicionar</a></td>
+            <td><a class="add_button" href="{% url 'create_console' %}">Adicionar</a></td>
         </tr>
     {% for console in consoles %}
             <tr>
@@ -118,16 +34,12 @@
                 <td>{{ console.fabricante }}</td>
                 <td>{{ console.lancamento }}</td>
                 <td>{{ console.descricao }}</td>
-                <td><a class="update" href="{% url 'update_console' console.id %}">Atualizar</a></td>
-                <td><a class="delete" href="{% url 'delete_console' console.id %}">Excluir</a></td>
+                <td><a class="update_button" href="{% url 'update_console' console.id %}">Atualizar</a></td>
+                <td><a class="delete_button" href="{% url 'delete_console' console.id %}">Excluir</a></td>
             </tr>
             {% endfor %}
         </table>
 
 </div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

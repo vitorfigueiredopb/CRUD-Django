@@ -1,0 +1,39 @@
+/*Estilo do corpo da página*/
+body {
+    margin: 0 300px;
+    background: #DCDCDC;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.container {
+    text-align: center;
+    color: black;
+}
+
+/*Estilo do formulário*/
+form {
+    margin: 0;
+    padding: 0;
+}
+
+form, label {
+    display: block;
+}
+
+form, input {
+    border: none;
+    border-radius: 6px;
+    height: 38px;
+}
+
+form, input#id_descricao {
+    height: 100px;
+    resize: horizontal;
+}
